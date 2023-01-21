@@ -1,8 +1,12 @@
 ## Chat Client & Server Applications
 
 
-### **Project Details**
+### **About the Project**
 This project involved building two Java applications, a chat client application and a chat server application which can pass messages back and forth over a local host connection. Both applications may be executed from the command line.
+
+### **Project Details**
+- Utilises Java Socket API
+- Utilises Java Multithreading (Chat Server Listens For Connections and Calls New Threads for Each Established Connection)
 
 ### **Running Details**
 Both the chatClient and chatServer application do not take any additional command line arguments, they instead request and validate information before starting the chat connection. When the chatServer Application starts it will request for you to select a port number. If an integer is given it will the display the message “Waiting for connection” and will attempt to make a connection on the chosen port number. Once a connection is made the chatServer will display that a connection was made. When a second is made the chatServer will tell you the chat has started. The chatServer will the read and write to the connection until the program is ended. 
